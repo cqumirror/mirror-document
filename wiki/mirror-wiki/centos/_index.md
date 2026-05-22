@@ -4,6 +4,10 @@ draft: false
 weight: 2
 filepath: '/wiki/mirror-wiki/centos/_index'
 ---
+{{% notice note %}}
+因 CentOS 已终止支持，本镜像站 CentOS 仓库仅对校内用户提供服务，且仅提供 [7.9.2009](https://mirrors.cqu.edu.cn/centos/7.9.2009/) 版本的镜像服务。
+{{% /notice %}}
+
 ## 地址
 
 http://mirrors.cqu.edu.cn/CentOS
@@ -19,10 +23,7 @@ CentOS 软件源
 
 ## 收录版本
 
-- CentOS 5
-- CentOS 6
-- CentOS 7
-- CentOS 8
+- CentOS 7.9.2009
 
 ## 使用说明
 
@@ -33,43 +34,10 @@ CentOS 软件源
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 ```
 
-
-然后查看 CentOS 版本：
-
-
-```bash
-cat /etc/system-release
-```
-
-
-根据版本号下载相应文件到指定目录：</br>
-**CentOS 5**:
-
-```bash
-wget   -O   /etc/yum.repos.d/CentOS-Base.repo  http://mirrors.cqu.edu.cn/repo/centos/Centos-5.repo
-```
-
-**CentOS 6**:
-
-```bash
-wget   -O   /etc/yum.repos.d/CentOS-Base.repo  http://mirrors.cqu.edu.cn/repo/centos/Centos-6.repo
-```
-
-**CentOS 7**:
+下载文件到指定目录：</br>
 
 ```bash
 wget   -O   /etc/yum.repos.d/CentOS-Base.repo  http://mirrors.cqu.edu.cn/repo/centos/Centos-7.repo
-```
-
-**CentOS 8**:
-
-```bash
-# CentOS-Base
-wget   -O   /etc/yum.repos.d/CentOS-Base.repo  http://mirrors.cqu.edu.cn/repo/centos/Centos-8-repo/CentOS-Base.repo
-# CentOS-Extra
-wget   -O   /etc/yum.repos.d/CentOS-Extras.repo  http://mirrors.cqu.edu.cn/repo/centos/Centos-8-repo/CentOS-Extras.repo
-# CentOS-AppStream
-wget   -O   /etc/yum.repos.d/CentOS-AppStream.repo  http://mirrors.cqu.edu.cn/repo/centos/Centos-8-repo/CentOS-AppStream.repo
 ```
 
 
