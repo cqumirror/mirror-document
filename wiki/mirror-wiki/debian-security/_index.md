@@ -11,23 +11,18 @@ https://mirrors.cqu.edu.cn/debian-security
 
 ## 说明
 
-Debian 安全更新
+Debian 安全更新仓库
 
 ## 收录架构
 
-- x86
-- x86_64
-- armel
-- arm64
-- ppc64el
-- source code
+Debian 支持的部分架构，如 amd64, arm64, armhf, i386, riscv64, 以及 source code。
 
 ## 收录版本
 
-- old stable (Debian 8 jessie)
-- old stable (Deibian 9 stretch)
-- stable (Debian 10 buster)
-- testing (bullseye)
+- oldoldstable (bullseye)
+- oldstable (bookworm)
+- stable (trixie)
+- testing (forky)
 
 ## 使用说明
 
@@ -55,5 +50,10 @@ su -c "sed -i 's|#*deb http://security.debian.org|deb https://mirrors.cqu.edu.cn
 
 但我们更推荐更安全的做法——`sudo`。[如何配置`sudo`](/wiki/mirror-wiki/debian/sudo)。
 
-
 另外，您亦可手动编辑`/etc/apt/sources.list`。
+
+### DEB822
+
+DEB822 是新版的 Debian 软件仓库配置格式。推荐 Debian 12 (Bookworm) 及以上版本使用新版格式。
+
+[参考 DEB822 配置](/wiki/mirror-wiki/debian/deb822)

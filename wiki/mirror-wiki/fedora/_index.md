@@ -40,13 +40,13 @@ mv /etc/yum.repos.d/fedora-updates-modular.repo /etc/yum.repos.d/fedora-updates-
 然后执行：
 
 ```bash
-wget   -O   /etc/yum.repos.d/fedora.repo   http://mirrors.cqu.edu.cn/repo/fedora/fedora.repo
-wget   -O   /etc/yum.repos.d/fedora-updates.repo   http://mirrors.cqu.edu.cn/repo/fedora/fedora-updates.repo
+wget -O /etc/yum.repos.d/fedora.repo http://mirrors.cqu.edu.cn/repo/fedora/fedora.repo
+wget -O /etc/yum.repos.d/fedora-updates.repo http://mirrors.cqu.edu.cn/repo/fedora/fedora-updates.repo
 ```
 
 ```bash
-wget   -O   /etc/yum.repos.d/fedora-modular.repo   http://mirrors.cqu.edu.cn/repo/fedora/fedora-modular.repo
-wget   -O   /etc/yum.repos.d/fedora-updates-modular.repo   http://mirrors.cqu.edu.cn/repo/fedora/fedora-updates-modular.repo
+wget -O /etc/yum.repos.d/fedora-modular.repo http://mirrors.cqu.edu.cn/repo/fedora/fedora-modular.repo
+wget -O /etc/yum.repos.d/fedora-updates-modular.repo http://mirrors.cqu.edu.cn/repo/fedora/fedora-updates-modular.repo
 ```
 
 再执行：

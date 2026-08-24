@@ -14,27 +14,24 @@ Debian 软件仓库
 
 ## 收录架构
 
-- x86
-- amd64 (x86_64)
-- armel
-- armhl
-- arm64
-- mipsel
-- mips64el
-- ppc64el
-- s390x
-- 源代码
+Debian 支持的部分架构，如 amd64, arm64, armhf, i386, riscv64, 以及 source code。
 
 ## 收录版本
 
-- oldoldstable (stretch)
-- oldstable (buster)
-- stable (bullseye)
-- testing (bookworm)
+- oldoldstable (bullseye)
+- oldstable (bookworm)
+- stable (trixie)
+- testing (forky)
 - unstable (sid)
 - experimental
 
 ## 使用说明
+
+### DEB822
+
+DEB822 是新版的 Debian 软件仓库配置格式。推荐 Debian 12 (Bookworm) 及以上版本使用新版格式。
+
+[参考 DEB822 配置](/wiki/mirror-wiki/debian/deb822)
 
 ### Debian Stable
 
@@ -83,7 +80,7 @@ deb http://mirrors.cqu.edu.cn/debian stable-updates main contrib non-free non-fr
 # deb-src http://mirrors.cqu.edu.cn/debian stable-proposed-updates main contrib non-free non-free-firmware
 ```
 
-## Debian Unstable (sid)
+### Debian Sid (Unstable)
 
 Debian Sid 需要且仅仅需要按照如下样例设置自己的`sources.list`：
 
@@ -92,8 +89,6 @@ deb https://mirrors.cqu.edu.cn/debian sid main contrib non-free non-free-firmwar
 # deb-src http://mirrors.cqu.edu.cn/debian sid main contrib non-free non-free-firmware
 ```
 
-
-
 {{% notice warning %}}
-为了避免更新冲突导致问题，请回避使用 `apt full-upgrade`,并仅仅使用 `apt upgrade`
+为了避免更新冲突导致问题，请避免使用 `apt full-upgrade`, 并推荐使用 `apt upgrade`
 {{% /notice %}}

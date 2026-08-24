@@ -1,0 +1,9 @@
+.vscode/
+.idea/
+node_modules/
+dist/
+.DS_Store
+.yarn.lock
+.env
+.env.test
+yarn.lock
